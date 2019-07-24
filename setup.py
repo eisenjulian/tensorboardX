@@ -30,7 +30,7 @@ class PostInstallCommand(install):
 with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
-version = '1.6'
+version = '1.7'
 # sha = subprocess.check_output(['git', 'rev-parse', 'HEAD']).decode('ascii').strip()
 # version_git = version + '+' + sha[:7]
 #
@@ -54,9 +54,9 @@ setup(
     version=version,
     description='TensorBoardX lets you watch Tensors Flow without Tensorflow',
     long_description=history,
-    author='Tzu-Wei Huang',
-    author_email='huang.dexter@gmail.com',
-    url='https://github.com/lanpa/tensorboardX',
+    author='Julian Eisenschlos',
+    author_email='eisenjulian@gmail.com',
+    url='https://github.com/eisenjulian/tensorboardX/tree/enable-gitless-install',
     packages=['tensorboardX'],
     include_package_data=True,
     install_requires=requirements,
